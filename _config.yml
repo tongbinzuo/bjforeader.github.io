@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Foreader Tech
 subtitle:
 description:
 keywords:
-author: John Doe
-language:
+author: Foreader Tech
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.foreader.com.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,7 +73,23 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: Daily
+
+widget:
+  title: 关于本站
+  content: <p>北京复阅科技有限公司技术小分队分享基地</p>
+
+social:
+  github: https://github.com/BJForeader
+  mail: mailto:jishu@foreader.cn
+
+nav:
+  主页: .
+  归档: archives
+  # about: about
+  # rss: atom.xml
+
+logo: https://www.foreader.com.cn/static/img/susu1.3329481.png
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
