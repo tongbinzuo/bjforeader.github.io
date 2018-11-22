@@ -117,7 +117,7 @@
             
           </h1>
           <p class="posted-on">
-          2016-09-06
+          2017-09-06
           </p>
           <div class="tags-links">
             
@@ -182,7 +182,6 @@
 </li>
 </ul>
 <p>还有一些别的语法，如<code>可以不用分号结尾</code>、<code>函数的返回值也可以是无类型</code>等，但这些稍微查一下<a href="http://www.groovy-lang.org/api.html" target="_blank" rel="noopener">GroovyAPI文档</a>或google一下就懂了,没啥技术门槛。</p>
-<p>​</p>
 </li>
 <li><p><strong>Closure(闭包)</strong></p>
 <p>说了这么多，是时候到主角—<strong>Closure(闭包)</strong>出场了。<strong>Closure(闭包)</strong>是Groovy中函数式编程的最好体现。所谓<code>函数式编程</code>跟我们熟知的<code>面向过程编程</code>、<code>面向对象编程</code>一样也是一种<a href="https://zh.wikipedia.org/wiki/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%9E%8B" target="_blank" rel="noopener">“编程范式”</a>，也就是如何编写程序的方法论。函数式编程最鲜明的特点是<code>函数是“第一等公民“</code>，所谓<a href="https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E9%A1%9E%E7%89%A9%E4%BB%B6" target="_blank" rel="noopener">“第一等公民”</a>，指的是函数与其他数据类型一样，处于平等地位，可以赋值给其他变量，也可以作为参数，传入另一个函数，或者作为别的函数的返回值。</p>
@@ -208,8 +207,8 @@
 <p>恍然大悟，原来这个类定义了Groovy环境下一些类支持的方法，而其中<strong>定义的静态方法第一个参数仅仅是为了标示目标类</strong>，所以是不需要传递的。</p>
 </li>
 </ul>
-<h3 id="Gradle-1"><a href="#Gradle-1" class="headerlink" title="Gradle"></a>Gradle</h3><h4 id="Gradle是什么"><a href="#Gradle是什么" class="headerlink" title="Gradle是什么"></a>Gradle是什么</h4><p>​    Gradle是基于Groovy定义了一套DSL，所谓DSL(领域专用语言)，就是专门针对某一特定问题的计算机语言。而Gradle我们可以认为是经过“定制”的Groovy，专门用于项目构建的语言。</p>
-<h4 id="Gradle学习—-Task，Project-Plugin"><a href="#Gradle学习—-Task，Project-Plugin" class="headerlink" title="Gradle学习— Task，Project,Plugin"></a>Gradle学习— <a href="https://docs.gradle.org/current/dsl/org.gradle.api.Task.html" target="_blank" rel="noopener">Task</a>，<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html" target="_blank" rel="noopener">Project</a>,<a href="https://docs.gradle.org/current/userguide/plugins.html" target="_blank" rel="noopener">Plugin</a></h4><p>虽然使用Android Studio开发的话，Gradle环境在IDE会自动下载集成，但要学好Gradle，建议还是自己部署一下环境。从<a href="http://gradle.org/" target="_blank" rel="noopener">Gradle官网</a>下载gradle后，配置一下环境变量。Gradle的环境就搭建起来了。</p>
+<h3 id="Gradle-1"><a href="#Gradle-1" class="headerlink" title="Gradle"></a>Gradle</h3><h4 id="Gradle是什么"><a href="#Gradle是什么" class="headerlink" title="Gradle是什么"></a>Gradle是什么</h4><pre><code>Gradle是基于Groovy定义了一套DSL，所谓DSL(领域专用语言)，就是专门针对某一特定问题的计算机语言。而Gradle我们可以认为是经过“定制”的Groovy，专门用于项目构建的语言。
+</code></pre><h4 id="Gradle学习—-Task，Project-Plugin"><a href="#Gradle学习—-Task，Project-Plugin" class="headerlink" title="Gradle学习— Task，Project,Plugin"></a>Gradle学习— <a href="https://docs.gradle.org/current/dsl/org.gradle.api.Task.html" target="_blank" rel="noopener">Task</a>，<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html" target="_blank" rel="noopener">Project</a>,<a href="https://docs.gradle.org/current/userguide/plugins.html" target="_blank" rel="noopener">Plugin</a></h4><p>虽然使用Android Studio开发的话，Gradle环境在IDE会自动下载集成，但要学好Gradle，建议还是自己部署一下环境。从<a href="http://gradle.org/" target="_blank" rel="noopener">Gradle官网</a>下载gradle后，配置一下环境变量。Gradle的环境就搭建起来了。</p>
 <p>和Groovy同理，要深入Gradle的话，要学的东西也不会少，但是作为普通的开发者，个人觉得把三个概念搞懂就可以了：<a href="https://docs.gradle.org/current/dsl/org.gradle.api.Task.html" target="_blank" rel="noopener">Task</a>，<a href="https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html" target="_blank" rel="noopener">Project</a>,<a href="https://docs.gradle.org/current/userguide/plugins.html" target="_blank" rel="noopener">Plugin</a></p>
 <ul>
 <li><p><strong>Project</strong></p>
@@ -238,8 +237,8 @@
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">buildscript &#123;</span><br><span class="line">    repositories &#123;</span><br><span class="line">        jcenter()<span class="comment">//表示编译过程中依赖的仓库</span></span><br><span class="line">    &#125;</span><br><span class="line">    dependencies &#123;</span><br><span class="line">      <span class="comment">//依赖android开发的gradle插件,groupId:artifactId:version</span></span><br><span class="line">        classpath <span class="string">'com.android.tools.build:gradle:1.5.0'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//应用插件</span></span><br><span class="line">apply <span class="string">plugin:</span> <span class="string">'com.android.application'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//配置插件属性</span></span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion <span class="number">23</span></span><br><span class="line">    buildToolsVersion <span class="string">"23.0.2"</span></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        applicationId <span class="string">"com.test"</span></span><br><span class="line">        versionCode <span class="number">1</span></span><br><span class="line">        versionName <span class="string">"1.0.0"</span></span><br><span class="line">    &#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">         release &#123;</span><br><span class="line">            minifyEnabled <span class="literal">false</span></span><br><span class="line">            proguardFiles getDefaultProguardFile(<span class="string">'proguard-android.txt'</span>), <span class="string">'proguard-rules.pro'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h4 id="Gradle进阶—-自定义插件"><a href="#Gradle进阶—-自定义插件" class="headerlink" title="Gradle进阶— 自定义插件"></a>Gradle进阶— 自定义插件</h4><p>​    Gradle允许开发者自定义插件来实现项目一些特殊的构建需求。譬如说：动态注入代码。我们可以直接在build.gradle定义自己的插件，但一般很少这么干，毕竟插件更多是为了项目复用的。更多情况，Gradle插件是以独立插件工程的形式开发的。下面以一个简单例子来介绍一下开发一个独立Gradle插件基本步骤：</p>
-<p>假设现在我们开发一个直接输出输入内容的插件：</p>
+<h4 id="Gradle进阶—-自定义插件"><a href="#Gradle进阶—-自定义插件" class="headerlink" title="Gradle进阶— 自定义插件"></a>Gradle进阶— 自定义插件</h4><pre><code>Gradle允许开发者自定义插件来实现项目一些特殊的构建需求。譬如说：动态注入代码。我们可以直接在build.gradle定义自己的插件，但一般很少这么干，毕竟插件更多是为了项目复用的。更多情况，Gradle插件是以独立插件工程的形式开发的。下面以一个简单例子来介绍一下开发一个独立Gradle插件基本步骤：
+</code></pre><p>假设现在我们开发一个直接输出输入内容的插件：</p>
 <ol>
 <li><p>建立插件工程</p>
 <p>由于Gradle是基于Groovy开发的，所以我们建立的必然是Groovy工程，项目目录结构如下</p>
@@ -262,7 +261,6 @@
 </li>
 <li><p>完善插件</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.test</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.gradle.api.Plugin</span><br><span class="line"><span class="keyword">import</span> org.gradle.api.Project</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestPlugin</span> <span class="keyword">implements</span> <span class="title">Plugin</span>&lt;<span class="title">Project</span>&gt; &#123;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String EXTENSION_NAME = <span class="string">"printMessage"</span>;<span class="comment">//扩展别名</span></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> apply(Project target) &#123;</span><br><span class="line">      <span class="comment">//创建扩展</span></span><br><span class="line">   TestExtension extension=  target.extensions.create(EXTENSION_NAME,TestExtension)</span><br><span class="line">        target.task(<span class="string">"printMessage"</span>)&lt;&lt; &#123;</span><br><span class="line">            println extension.message</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>​</p>
 </li>
 </ul>
 </li>
@@ -344,9 +342,13 @@
     <div class="nav-links">
       
         <div class="nav-previous">
-          <a href="/2017/09/06/test/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> 上一页</a>
+          <a href="/2018/11/21/hello-world/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> 上一页</a>
         </div>
       
+      
+        <div class="nav-next">
+          <a href="/2016/09/06/抓重点学Gradle/" rel="prev">下一页 <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
       
     </div>
 
